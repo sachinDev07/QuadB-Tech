@@ -1,7 +1,10 @@
+import MoviesLists from "../components/moviesLists";
 
 const ShowListsPage = () => {
   return (
-    <div>ShowListsPage</div>
+    <div>
+        <MoviesLists />
+    </div>
   )
 }
 
