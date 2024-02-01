@@ -1,7 +1,10 @@
+import MovieSummary from "../components/MovieSummary";
 
 
 const ShowSummaryPage = () => {
-  return <div>ShowSummaryPage</div>;
+  return <div>
+    <MovieSummary />
+  </div>;
 };
 
 export default ShowSummaryPage;

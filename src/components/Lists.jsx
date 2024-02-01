@@ -18,7 +18,7 @@ const Lists = ({id, poster, movieName, movieType, genre, status, rating }) => {
       </div>
       <Link to={`/summary/${id}`}>
         <div className="px-2 md:px-0">
-          <button className="bg-blue-500 text-white p-2 mt-2 w-full rounded-sm">
+          <button className="bg-blue-500 hover:bg-blue-600 transition duration-150 ease-linear text-white p-2 mt-2 w-full rounded-sm">
               Show Summary
            </button>
         </div>
