@@ -16,9 +16,9 @@ const MoviesLists = () => {
 
   return (
     <div className="md:w-[1200px] mx-auto my-8">
-      <h1 className="px-2 md:pl-8 text-4xl font-bold md:mb-6 mb-2">
-        Movies Lists
-      </h1>
+      <div className="bg-blue-500 py-4 mb-4 md:rounded-md">
+        <h1 className="text-white text-4xl font-bold pl-4">Movies Lists</h1>
+      </div>
       <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
         {movielists.map((show) => (
           <div key={show.show.id} className="p-4">

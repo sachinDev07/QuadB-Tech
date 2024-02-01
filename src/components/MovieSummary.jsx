@@ -40,6 +40,9 @@ const MovieSummary = () => {
 
   return (
     <div className="container mx-auto my-8">
+      <div className="max-w-2xl mx-auto md:rounded-md bg-blue-500 text-white p-4 mb-4">
+        <h1 className="text-3xl font-bold">{showDetails.name}</h1>      
+      </div>
       <div className="max-w-2xl mx-auto">
         <img
           src={showDetails.image?.original}
