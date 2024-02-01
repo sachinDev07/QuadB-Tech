@@ -1,18 +1,9 @@
 import { useState, useEffect } from "react";
 import Lists from "./Lists";
+import useFetchApi from "../utils/usefetchApi";
 
 const MoviesLists = () => {
-  const [movielists, setMoviesLists] = useState([]);
-
-  async function fetchApi() {
-    const response = await fetch(`https://api.tvmaze.com/search/shows?q=all`);
-    const data = await response.json();
-    setMoviesLists(data);
-  }
-
-  useEffect(() => {
-    fetchApi();
-  }, []);
+  const { movielists } = useFetchApi();
 
   return (
     <div className="md:w-[1200px] mx-auto my-8">
