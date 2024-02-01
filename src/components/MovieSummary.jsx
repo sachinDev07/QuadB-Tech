@@ -102,9 +102,9 @@ const MovieSummary = () => {
           )}
 
           {submittedFormData !== null && submittedFormData.length > 0 && (
-            <div className="mt-8">
+            <div className="mt-8 overflow-x-auto">
               <h2 className="text-xl font-semibold mb-2">Booked Movie Data</h2>
-              <table className="table-auto">
+              <table className="table-auto min-w-full">
                 <thead>
                   <tr>
                     <th className="border px-4 py-2">Name</th>
@@ -121,7 +121,9 @@ const MovieSummary = () => {
                       <td className="border px-4 py-2">{booking.email}</td>
                       <td className="border px-4 py-2">{booking.movieName}</td>
                       <td className="border px-4 py-2">{booking.numTickets}</td>
-                      <td className="border px-4 py-2">{booking.selectedDate}</td>
+                      <td className="border px-4 py-2">
+                        {booking.selectedDate}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
