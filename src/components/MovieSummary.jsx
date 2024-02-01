@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import BookTicketForm from "./BookTicketForm";
+import { MOVIE_DETAIL_API } from "../constant";
 
 const localStorageData = JSON.parse(localStorage.getItem("userDetails"));
 
@@ -12,7 +13,7 @@ const MovieSummary = () => {
   const [submittedFormData, setSubmittedFormData] = useState(localStorageData);
 
   async function getMovieData(id) {
-    const response = await fetch(`https://api.tvmaze.com/shows/${id}`);
+    const response = await fetch(MOVIE_DETAIL_API+ id);
     const data = await response.json();
     setShowDetails(data);
   }
