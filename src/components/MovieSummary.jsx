@@ -85,7 +85,7 @@ const MovieSummary = () => {
 
           {!showForm && (
             <button
-              className="bg-blue-500 text-white p-2 mt-4"
+              className="bg-blue-500 hover:bg-blue-700 transition duration-150 ease-linear text-white p-2 mt-4"
               onClick={handleBookTicket}
             >
               Book Ticket
